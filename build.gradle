@@ -1,0 +1,67 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+	id 'java'
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+group = 'com.mishin870'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '1.11'
+targetCompatibility = '1.11'
+
+String serverHome = "$System.env.SPIGOT_HOME"
+
+repositories {
+	mavenCentral()
+	maven {
+		name = 'spigotmc-repo'
+		url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+	}
+	maven {
+		name = 'sonatype'
+		url = 'https://oss.sonatype.org/content/groups/public/'
+	}
+}
+
+dependencies {
+	compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+}
+
+processResources {
+	from(sourceSets.main.resources.srcDirs) {
+		filter ReplaceTokens, tokens: [version: version]
+	}
+}
+
+task copyToServer(dependsOn: jar) {
+	doLast {
+		copy {
+			from jar
+			into "$serverHome\\plugins"
+		}
+	}
+}
+
+task startServer(dependsOn: copyToServer) {
+	doLast {
+		javaexec {
+			main="-jar"
+			args = [
+					"-DIReallyKnowWhatIAmDoingISwear",
+					"-Dfile.encoding=UTF-8",
+					"$serverHome\\server.jar",
+					"nogui",
+					"--world-container",
+					"worlds"
+			]
+			workingDir "$serverHome"
+		}
+	}
+}

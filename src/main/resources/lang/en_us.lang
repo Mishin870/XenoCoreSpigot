@@ -1,0 +1,84 @@
+command.only_players=Only players can execute this command
+command.unknown_action=Unknown action: §c{0}§f
+command.wrong_arguments=Wrong arguments
+
+general.player=§c{0}§f
+general.hello=Hello, {0}!
+general.bye=Bye, {0}!
+general.join={0} joined
+general.quit={0} left
+
+menu.left=Previous page
+menu.right=Next page
+
+arena.state.lobby=§aIn lobby
+arena.state.starting=§6Starting
+arena.state.started=§cStarted
+arena.state.initiated={0} initiated arena start
+arena.state.join={0} joined arena. Players: §c{1}§f
+arena.state.leave={0} leave arena. Players: §c{1}§f
+arena.state.arena_started=Arena started
+arena.state.timer=Starting in: §c{0}s
+
+admin=Admin
+admin.stop=Stop server
+admin.games=Games
+admin.edit=Edit arena
+
+menu=Menu
+menu.leave=Leave
+menu.start=Start
+
+arena.edit=Edit arena: §c{0}§f
+arena.edit.lobby=Set lobby location
+arena.edit.location=Change location
+arena.edit.game=Set game
+arena.edit.location.edit_all=Edit arena locations
+arena.edit.location.edit_for_game=Required locations for game §c{0}§f
+arena.edit.created=Arena created: §c{0}§f
+arena.edit.renamed=Arena renamed: §c{0}§f
+arena.edit.lobby_changed=Lobby changed for arena: §c{0}§f
+arena.edit.location_changed=Location §c{0}§f was set for arena: §c{1}§f
+arena.edit.game_changed=Game §c{0}§f was set for arena: §c{1}§f
+arena.edit.hub_changed=New hub location was set
+
+arena.error.join_started=You can't join arena when it's active
+arena.error.start_started=Arena is already started
+arena.error.not_found=Arena not found: §c{0}§f
+arena.error.already_joined=You have already joined arena (§c{0}§f)
+arena.error.already_exist=Arena §c{0}§f already exist
+arena.error.game_change_error=Can't set game §c{0}§f for arena: §c{1}§f
+
+arena.all=Arenas
+arena.sub.key=§fKey: §c{0}§f
+arena.sub.game=§fGame: §c{0}§f
+arena.sub.state=§fState: {0}
+arena.sub.players=§fPlayers: §c{0}§f
+
+game.all=Games
+game.error.not_found=Game not found: §c{0}§f
+game.error.location_required=Game §c{0}§f requires location §c{1}§f (§c{2}§f)
+
+game.empty.name=Empty game
+
+game.monster.list=Monsters: [{0}]
+game.monster.name=Monster vs humans
+game.monster.name.desc=AmongUs in minecraft
+game.monster.killed={0} was killed by monster {1}
+game.monster.skill_used=Skill activated
+game.monster.dead=§3You are dead
+game.monster.dead.desc=Wait until game ends
+game.monster.human.win=§2Humans won
+game.monster.human.win.desc=
+game.monster.monster.win=§4Monsters won
+game.monster.monster.win.desc=
+game.monster.human=§2You are human
+game.monster.human.desc=Try to survive 5 minutes
+game.monster.human.skill=Stun monster
+game.monster.monster.head=§4Monster
+game.monster.monster=§4You are monster
+game.monster.monster.desc=Kill all humans
+game.monster.monster.skill=Night vision
+game.monster.location.human=Human spawn
+game.monster.location.monster=Monster spawn
+game.monster.location.dead=Dead humans spawn

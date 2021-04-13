@@ -1,0 +1,23 @@
+name: XenoCore
+version: @version@
+main: com.mishin870.core.XenoCore
+api-version: 1.16
+prefix: XENO
+load: POSTWORLD
+authors: [ Mishin870 ]
+description: Core library for all Mishin870 plugins
+website: https://t.me/Mishin870
+
+commands:
+  arena:
+    description: Arena management
+    usage: /<command> ([join|start|leave|create|rename|lobby|location|game] arena_key [optional])
+    permission: com.mishin870.core.arena
+  game:
+    description: Game management
+    usage: /<command>
+    permission: com.mishin870.core.game
+  tpworld:
+    description: Teleport to another world
+    usage: /<command>
+    permission: com.mishin870.core.tpworld

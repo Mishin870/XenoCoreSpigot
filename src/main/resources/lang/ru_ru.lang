@@ -1,0 +1,84 @@
+command.only_players=Только игроки могут исполнять эту команду
+command.unknown_action=Неизвестное действие: §c{0}§f
+command.wrong_arguments=Неправильные аргументы
+
+general.player=§c{0}§f
+general.hello=Привет, {0}!
+general.bye=Пока, {0}!
+general.join={0} присоединился
+general.quit={0} вышел
+
+menu.left=Предыдущая страница
+menu.right=Следующая страница
+
+arena.state.lobby=§aВ лобби
+arena.state.starting=§6Запускается
+arena.state.started=§cЗапущена
+arena.state.initiated={0} инициировал запуск арены
+arena.state.join={0} присоединился к арене. Участников: §c{1}§f
+arena.state.leave={0} покинул арену. Участников: §c{1}§f
+arena.state.arena_started=Арена запущена
+arena.state.timer=Запуск через: §c{0}с
+
+admin=Админка
+admin.stop=Остановить сервер
+admin.games=Список игр
+admin.edit=Редактировать арену
+
+menu=Меню
+menu.leave=Выйти
+menu.start=Запустить
+
+arena.edit=Редактирование арены: {0}
+arena.edit.lobby=Установить локацию лобби
+arena.edit.location=Установить локацию
+arena.edit.game=Установить игру
+arena.edit.location.edit_all=Установка локаций арены
+arena.edit.location.edit_for_game=Требуемые локации для игры {0}
+arena.edit.created=Арена создана: §c{0}§f
+arena.edit.renamed=Арена переименована: §c{0}§f
+arena.edit.lobby_changed=Установлено лобби арены: §c{0}§f
+arena.edit.location_changed=Локация §c{0}§f установлена для арены: §c{1}§f
+arena.edit.game_changed=Для арены §c{1}§f установлена игра §c{0}§f
+arena.edit.hub_changed=Установлена новая локация хаба
+
+arena.error.join_started=Вы не можете присоединиться пока арена активна
+arena.error.start_started=Арена уже запущена
+arena.error.not_found=Арена не найдена: §c{0}§f
+arena.error.already_joined=Вы уже состоите в арене (§c{0}§f)
+arena.error.already_exist=Арена §c{0}§f уже существует
+arena.error.game_change_error=Не удалось установить игру §c{0}§f для арены §c{1}§f
+
+arena.all=Арены
+arena.sub.key=§fКод: §c{0}§f
+arena.sub.game=§fРежим: §c{0}§f
+arena.sub.state=§fСостояние: {0}
+arena.sub.players=§fУчастников: §c{0}§f
+
+game.all=Список игр
+game.error.not_found=Не удалось найти игру: §c{0}§f
+game.error.location_required=Для игры §c{0}§f требуется установить локацию §c{1}§f (§c{2}§f)
+
+game.empty.name=Пустая игра
+
+game.monster.name=Монстр против людей
+game.monster.name.desc=AmongUs в майнкрафте
+game.monster.list=Монстры: [{0}]
+game.monster.killed={0} был убит монстром {1}
+game.monster.skill_used=Способность активирована
+game.monster.dead=§3Вы умерли
+game.monster.dead.desc=Дождитесь окончания игры
+game.monster.human.win=§2Победили люди
+game.monster.human.win.desc=
+game.monster.monster.win=§4Победили монстры
+game.monster.monster.win.desc=
+game.monster.human=§2Вы человек
+game.monster.human.desc=Постарайтесь выжить 5 минут
+game.monster.human.skill=Заморозить монстра
+game.monster.monster.head=§4Монстр
+game.monster.monster=§4Вы монстр
+game.monster.monster.desc=Убейте всех людей
+game.monster.monster.skill=Ночное зрение
+game.monster.location.human=Спаун людей
+game.monster.location.monster=Спаун монстров
+game.monster.location.dead=Спаун погибших людей
